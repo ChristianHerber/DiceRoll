@@ -37,12 +37,18 @@ class MainActivity : AppCompatActivity() {
         val dice = Dice(6)
         val diceRoll = dice.roll() //Chama a função que joga o dado
 
+        val dice2 = Dice(6)
+        val dice2Roll = dice2.roll()
+
         /**
          * Atualiza o texto do textview a cada "jogada" do dado
          * mostrando o número aleatório
          */
         val resultTextView: TextView = findViewById(R.id.textView)
         resultTextView.text = diceRoll.toString()
+
+        val resultTextView2: TextView = findViewById(R.id.textView3)
+        resultTextView2.text = dice2Roll.toString()
     }//fun rollDice
 
 }// class MainActivity
